@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<nav th:fragment="nav_fragements" class="navbar">
+    <!-- Search Box-->
+    <div class="search-box">
+        <button class="dismiss"><i class="icon-close"></i></button>
+        <form id="searchForm" action="#" role="search">
+            <input type="search" placeholder="What are you looking for..." class="form-control">
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-holder d-flex align-items-center justify-content-between">
+            <div style="margin: 0 auto" id="u2_text" class="text">
+                <p><h2><strong>量营家后台管理系统</strong></h2></p>
+            </div>
+            <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Languages dropdown    -->
+                <li>欢迎您XXX</li>
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="#"><span class="d-none d-sm-inline-block">用户管理</span></a>
+                    <ul aria-labelledby="用户管理" class="dropdown-menu">
+                        <li><a rel="nofollow" href="#" class="dropdown-item">修改密码</a>
+                        <li><a rel="nofollow" href="#" class="dropdown-item">退出登录</a>
+                    </ul>
+                </li>
+                <!-- Logout    -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<nav th:fragment="side_fragement(n)" class="side-navbar">
+    <ul class="list-unstyled">
+        <li th:classappend="${n==1} ? 'active'"><a href="#nav1" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>系统中心</a>
+            <ul id="nav1" class="collapse list-unstyled ">
+                <li><a href="#">菜单管理</a></li>
+                <li><a href="#">账号管理</a></li>
+                <li><a href="#">组织结构</a></li>
+                <li><a href="#">职务管理</a></li>
+                <li><a href="#">角色管理</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==2} ? 'active'"><a href="#nav2" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>客户中心</a>
+            <ul id="nav2" class="collapse list-unstyled ">
+                <li><a href="#">客户列表</a></li>
+                <li><a href="#">注册邀请关系</a></li>
+                <li><a href="#">合作商管理</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==3} ? 'active'"><a href="#nav3" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>营销中心</a>
+            <ul id="nav3" class="collapse list-unstyled ">
+                <li><a href="#">活动管理</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==4} ? 'active'"><a href="#nav4" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>订单中心</a>
+            <ul id="nav4" class="collapse list-unstyled ">
+                <li><a href="#">产品订单</a></li>
+                <li><a href="#">产品积分</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==5} ? 'active'"><a href="#nav5" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>组件中心</a>
+            <ul id="nav5" class="collapse list-unstyled ">
+                <li><a href="#">佣金比例配置</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==6} ? 'active'"><a href="#nav6" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>积分商城</a>
+            <ul id="nav6" class="collapse list-unstyled ">
+                <li><a href="#">商品管理</a></li>
+                <li><a href="#">用户积分</a></li>
+                <li><a href="#">快速配置</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==7} ? 'active'"><a href="#nav7" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>消息中心</a>
+            <ul id="nav7" class="collapse list-unstyled ">
+                <li><a href="#">短信发送记录</a></li>
+                <li><a href="#">发送系统公告</a></li>
+                <li><a href="#">发送平台信息</a></li>
+            </ul>
+        </li>
+        <li th:classappend="${n==8} ? 'active'"><a href="#nav8" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>数据中心</a>
+            <ul id="nav8" class="collapse list-unstyled ">
+                <li><a href="#">佣金明细</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
