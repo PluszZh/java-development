@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<nav th:fragment="nav_fragements" class="navbar">
+<nav th:fragment="nav_fragements" class="navbar" style="background-color: rgb(0, 191, 191)">
     <!-- Search Box-->
-    <div class="search-box">
-        <button class="dismiss"><i class="icon-close"></i></button>
-        <form id="searchForm" action="#" role="search">
-            <input type="search" placeholder="What are you looking for..." class="form-control">
-        </form>
-    </div>
-    <div class="container-fluid">
-        <div class="navbar-holder d-flex align-items-center justify-content-between">
+    <div class="container-fluid" >
+        <div class="navbar-holder d-flex align-items-center justify-content-between" >
             <div>
                 <img src="/images/u5.svg" alt="logo" th:src="@{/images/u5.svg}" width="60px">
             </div>
@@ -18,7 +12,7 @@
             </div>
             <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <!-- Languages dropdown    -->
-                <li>欢迎您!&nbsp;<span style="color: #00aeef" th:text="${session.username}"></span> </li>
+                <li>欢迎您!&nbsp;<span style="color: #fbde4a" th:text="${session.username}"></span> </li>
                 <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><span class="d-none d-sm-inline-block">用户管理</span></a>
                     <ul aria-labelledby="用户管理" class="dropdown-menu">
                         <li><a rel="nofollow" href="#" class="dropdown-item">修改密码</a>

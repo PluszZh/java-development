@@ -18,6 +18,8 @@ public class LoginController {
             return "redirect:battalion";
         }
         model.addAttribute("errMsg","用户名或者密码错误!");
+
+
         return "login";
 
 

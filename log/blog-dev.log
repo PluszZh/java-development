@@ -3175,3 +3175,222 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error
 2019-10-12 18:09:52.917  INFO 11468 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
 2019-10-12 18:09:52.921  INFO 11468 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : --------doAfter--------
 2019-10-12 18:09:52.921  INFO 11468 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:13:36.071  INFO 11468 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:13:36.072  INFO 11468 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:13:36.080  INFO 11468 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-12 18:13:36.100  INFO 11468 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-12 18:13:36.974  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : Starting PrdApplication on DESKTOP-GQ6BGQS with PID 11468 (C:\Users\Jvinh\IdeaProjects\java-development\target\classes started by Jvinh in C:\Users\Jvinh\IdeaProjects\java-development)
+2019-10-12 18:13:36.974  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : The following profiles are active: dev
+2019-10-12 18:13:37.851  INFO 11468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-12 18:13:37.855  INFO 11468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-10-12 18:13:37.980  INFO 11468 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$16a685ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-12 18:13:38.192  INFO 11468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-12 18:13:38.194  INFO 11468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 18:13:38.194  INFO 11468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-12 18:13:38.196  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.19] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-12 18:13:38.196  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2019-10-12 18:13:38.196  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-12 18:13:38.197  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-12 18:13:38.197  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-12 18:13:38.228  INFO 11468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 18:13:38.228  INFO 11468 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1248 ms
+2019-10-12 18:13:38.349  INFO 11468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-12 18:13:38.389  INFO 11468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-12 18:13:38.825  INFO 11468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-12 18:13:38.826  INFO 11468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-10-12 18:13:39.120  INFO 11468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:13:39.150  INFO 11468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 18:13:39.467  INFO 11468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:13:39.534  WARN 11468 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-12 18:13:39.617  INFO 11468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 18:13:40.101  INFO 11468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-12 18:13:40.103  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : Started PrdApplication in 3.229 seconds (JVM running for 250.462)
+2019-10-12 18:13:40.115  INFO 11468 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-12 18:13:41.613  INFO 11468 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:13:41.614  INFO 11468 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:13:41.615  INFO 11468 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-12 18:13:41.688  INFO 11468 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-10-12 18:13:42.423  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : Starting PrdApplication on DESKTOP-GQ6BGQS with PID 11468 (C:\Users\Jvinh\IdeaProjects\java-development\target\classes started by Jvinh in C:\Users\Jvinh\IdeaProjects\java-development)
+2019-10-12 18:13:42.423  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : The following profiles are active: dev
+2019-10-12 18:13:43.119  INFO 11468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-12 18:13:43.125  INFO 11468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-10-12 18:13:43.219  INFO 11468 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$16a685ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-12 18:13:43.992  INFO 11468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-12 18:13:43.995  INFO 11468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 18:13:43.995  INFO 11468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-12 18:13:43.997  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.19] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-12 18:13:43.997  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2019-10-12 18:13:43.998  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-12 18:13:43.998  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-12 18:13:44.004  INFO 11468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-12 18:13:44.044  INFO 11468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 18:13:44.044  INFO 11468 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1613 ms
+2019-10-12 18:13:44.314  INFO 11468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-12 18:13:44.374  INFO 11468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-10-12 18:13:44.850  INFO 11468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-10-12 18:13:44.850  INFO 11468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-10-12 18:13:45.157  INFO 11468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:13:45.233  INFO 11468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 18:13:46.198  INFO 11468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:13:46.327  WARN 11468 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-12 18:13:46.518  INFO 11468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 18:13:47.099  INFO 11468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-12 18:13:47.100  INFO 11468 --- [restartedMain] com.develop.prd.PrdApplication           : Started PrdApplication in 4.773 seconds (JVM running for 257.46)
+2019-10-12 18:13:47.105  INFO 11468 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-12 18:13:54.224  INFO 11468 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-12 18:13:54.226  INFO 11468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-12 18:13:54.240  INFO 11468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-12 18:13:56.924  INFO 11468 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/login', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.LoginController.login', args=[admin, 1, {}, org.apache.catalina.connector.RequestFacade@7a6ac1b6]}
+2019-10-12 18:13:56.934  INFO 11468 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:13:56.935  INFO 11468 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Result : login
+2019-10-12 18:14:01.273  INFO 11468 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/login', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.LoginController.login', args=[admin, 123456, {}, org.apache.catalina.connector.RequestFacade@438bea3a]}
+2019-10-12 18:14:01.276  INFO 11468 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:14:01.276  INFO 11468 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : Result : redirect:battalion
+2019-10-12 18:14:01.296  INFO 11468 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:14:01.301  INFO 11468 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:14:01.301  INFO 11468 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:16:03.058  INFO 11468 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:16:03.058  INFO 11468 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:16:03.060  INFO 11468 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-10-12 18:16:03.069  INFO 11468 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-10-12 18:16:11.963  INFO 11688 --- [restartedMain] com.develop.prd.PrdApplication           : Starting PrdApplication on DESKTOP-GQ6BGQS with PID 11688 (C:\Users\Jvinh\IdeaProjects\java-development\target\classes started by Jvinh in C:\Users\Jvinh\IdeaProjects\java-development)
+2019-10-12 18:16:11.966  INFO 11688 --- [restartedMain] com.develop.prd.PrdApplication           : The following profiles are active: dev
+2019-10-12 18:16:12.030  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-12 18:16:12.031  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-12 18:16:13.669  INFO 11688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-12 18:16:13.703  INFO 11688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-10-12 18:16:14.197  INFO 11688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7feecd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-12 18:16:14.870  INFO 11688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-12 18:16:14.896  INFO 11688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 18:16:14.896  INFO 11688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-12 18:16:14.905  INFO 11688 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.19] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-12 18:16:14.905  INFO 11688 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2019-10-12 18:16:14.906  INFO 11688 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-12 18:16:14.906  INFO 11688 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-12 18:16:14.910  INFO 11688 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-12 18:16:15.043  INFO 11688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 18:16:15.043  INFO 11688 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3012 ms
+2019-10-12 18:16:15.512  INFO 11688 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-12 18:16:15.617  INFO 11688 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-12 18:16:15.620  INFO 11688 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-12 18:16:15.808  INFO 11688 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-12 18:16:16.094  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-12 18:16:17.427  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-12 18:16:17.452  INFO 11688 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-10-12 18:16:20.194  INFO 11688 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 18:16:20.290  INFO 11688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 18:16:20.801  INFO 11688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 18:16:20.869  WARN 11688 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-12 18:16:20.933  INFO 11688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 18:16:21.517  INFO 11688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-12 18:16:21.530  INFO 11688 --- [restartedMain] com.develop.prd.PrdApplication           : Started PrdApplication in 10.384 seconds (JVM running for 12.625)
+2019-10-12 18:19:48.165  INFO 11688 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-12 18:19:48.166  INFO 11688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-12 18:19:48.185  INFO 11688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-10-12 18:22:36.559  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:22:36.564  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:22:36.567  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:30:38.121  INFO 11688 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:30:38.122  INFO 11688 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:30:38.123  INFO 11688 --- [http-nio-8080-exec-3] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:31:17.240  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:31:17.240  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:31:17.243  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:33:23.267  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:33:23.267  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:33:23.268  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:33:24.610  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:33:24.611  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:33:24.612  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:33:42.822  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:33:42.823  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:33:42.824  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:34:11.665  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:34:11.666  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:34:11.667  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:34:12.581  INFO 11688 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:34:12.583  INFO 11688 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:34:12.583  INFO 11688 --- [http-nio-8080-exec-2] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:34:46.199  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:34:46.200  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:34:46.201  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:35:17.750  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:35:17.750  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:35:17.750  INFO 11688 --- [http-nio-8080-exec-1] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:35:18.575  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:35:18.577  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:35:18.578  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:35:41.655  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/login', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.LoginController.login', args=[admin, 123456, {}, org.apache.catalina.connector.RequestFacade@47202164]}
+2019-10-12 18:35:41.676  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:35:41.676  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Result : redirect:battalion
+2019-10-12 18:35:41.697  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion;jsessionid=1C9E35407093EE1FAE2F49971784545D', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:35:41.698  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:35:41.699  INFO 11688 --- [http-nio-8080-exec-5] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:36:38.519  INFO 11688 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion;jsessionid=1C9E35407093EE1FAE2F49971784545D', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:36:38.521  INFO 11688 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:36:38.521  INFO 11688 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:38:32.396  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion;jsessionid=1C9E35407093EE1FAE2F49971784545D', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:38:32.396  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:38:32.397  INFO 11688 --- [http-nio-8080-exec-6] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:38:49.463  INFO 11688 --- [http-nio-8080-exec-10] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion;jsessionid=1C9E35407093EE1FAE2F49971784545D', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:38:49.464  INFO 11688 --- [http-nio-8080-exec-10] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:38:49.464  INFO 11688 --- [http-nio-8080-exec-10] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:39:11.440  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion;jsessionid=1C9E35407093EE1FAE2F49971784545D', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:39:11.442  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:39:11.442  INFO 11688 --- [http-nio-8080-exec-4] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 18:39:16.172  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 18:39:16.173  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 18:39:16.173  INFO 11688 --- [http-nio-8080-exec-7] com.develop.prd.aspect.LogAspect         : Result : index
+2019-10-12 19:28:51.655  WARN 11688 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m33s922ms165µs600ns).
+2019-10-12 20:09:24.606  INFO 11688 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 20:09:24.610  INFO 11688 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 20:09:24.629  INFO 11688 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-12 20:09:24.652  INFO 11688 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-12 20:09:38.162  INFO 2536 --- [restartedMain] com.develop.prd.PrdApplication           : Starting PrdApplication on DESKTOP-GQ6BGQS with PID 2536 (C:\Users\Jvinh\IdeaProjects\java-development\target\classes started by Jvinh in C:\Users\Jvinh\IdeaProjects\java-development)
+2019-10-12 20:09:38.168  INFO 2536 --- [restartedMain] com.develop.prd.PrdApplication           : The following profiles are active: dev
+2019-10-12 20:09:38.231  INFO 2536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-12 20:09:38.231  INFO 2536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-12 20:09:39.376  INFO 2536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-12 20:09:39.498  INFO 2536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111ms. Found 2 repository interfaces.
+2019-10-12 20:09:40.037  INFO 2536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$420e25b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-12 20:09:40.743  INFO 2536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-12 20:09:40.778  INFO 2536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 20:09:40.779  INFO 2536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-12 20:09:40.790  INFO 2536 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.19] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-12 20:09:40.790  INFO 2536 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2019-10-12 20:09:40.791  INFO 2536 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-12 20:09:40.791  INFO 2536 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-12 20:09:40.798  INFO 2536 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-12 20:09:41.115  INFO 2536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 20:09:41.116  INFO 2536 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2885 ms
+2019-10-12 20:09:41.455  INFO 2536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-12 20:09:41.591  INFO 2536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-12 20:09:41.592  INFO 2536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-12 20:09:41.898  INFO 2536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-12 20:09:42.153  INFO 2536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-12 20:09:44.285  INFO 2536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-12 20:09:44.310  INFO 2536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-10-12 20:09:46.208  INFO 2536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 20:09:46.296  INFO 2536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 20:09:47.246  INFO 2536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 20:09:47.315  WARN 2536 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-12 20:09:47.375  INFO 2536 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 20:09:47.812  INFO 2536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-12 20:09:47.816  INFO 2536 --- [restartedMain] com.develop.prd.PrdApplication           : Started PrdApplication in 10.369 seconds (JVM running for 11.891)
+2019-10-12 20:09:55.918  INFO 2536 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-12 20:09:55.919  INFO 2536 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-12 20:09:55.935  INFO 2536 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-10-12 20:10:01.774  INFO 2536 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/login', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.LoginController.login', args=[admin, 123456, {}, org.apache.catalina.connector.RequestFacade@35eb8d4b]}
+2019-10-12 20:10:01.797  INFO 2536 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 20:10:01.798  INFO 2536 --- [http-nio-8080-exec-9] com.develop.prd.aspect.LogAspect         : Result : redirect:battalion
+2019-10-12 20:10:01.832  INFO 2536 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : Request : {url='http://localhost:8080/battalion', ip='0:0:0:0:0:0:0:1', classMethod='com.develop.prd.controller.indexController.index', args=[]}
+2019-10-12 20:10:01.835  INFO 2536 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : --------doAfter--------
+2019-10-12 20:10:01.836  INFO 2536 --- [http-nio-8080-exec-8] com.develop.prd.aspect.LogAspect         : Result : index

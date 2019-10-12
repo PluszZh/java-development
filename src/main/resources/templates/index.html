@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{link_fragements :: links}">
-  </head>
-  <body>
-    <div class="page">
-      <!-- Main Navbar-->
-      <header class="header">
-          <nav th:replace="~{component_fragements :: nav_fragements}" class="navbar">
+<head>
+    <div th:replace="~{link_fragements :: links}"></div>
+    <title>量营家后台管理系统</title>
+</head>
+<body>
+<div class="page">
+    <!-- Main Navbar-->
+    <header class="header">
+        <nav th:replace="~{component_fragements :: nav_fragements}">
 
-          </nav>
-      </header>
-      <div class="page-content d-flex align-items-stretch"> 
+        </nav>
+    </header>
+    <!--<nav th:replace="~{component_fragements :: nav_fragements}" class="navbar" >-->
+
+    </nav>
+    <div class="page-content d-flex align-items-stretch">
         <!-- Side Navbar -->
-          <nav th:replace="~{component_fragements :: side_fragement(1)}" class="side-navbar">
-
-          </nav>
-
-      </div>
+        <nav th:replace="~{component_fragements :: side_fragement(1)}" class="side-navbar"></nav>
+        <div>
+            <img src="/images/background.png" th:src="@{/images/background.png}">
+        </div>
     </div>
-    <div th:replace="link_fragements :: jsScript"></div>
-  </body>
+</div>
+<div th:replace="link_fragements :: jsScript"></div>
+</body>
 </html>
