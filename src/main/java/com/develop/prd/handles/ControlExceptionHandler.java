@@ -44,7 +44,7 @@ public class ControlExceptionHandler {
         model.addObject("requesturl",requestURL);
         model.addObject("errormsg",errormsg);
         model.addObject("datatime",datetime);
-        model.setViewName("error/error");
+        //model.setViewName("error/error");
 
         return model;
     }

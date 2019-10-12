@@ -22,7 +22,7 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     //配置切入点biaodas
-    @Pointcut("execution(* com.develop.prd.controls.*.*(..))")
+    @Pointcut("execution(* com.develop.prd.controller.*.*(..))")
     public void log() {}
 
     //前置通知

@@ -10,20 +10,22 @@
     </div>
     <div class="container-fluid">
         <div class="navbar-holder d-flex align-items-center justify-content-between">
+            <div>
+                <img src="/images/u5.svg" alt="logo" th:src="@{/images/u5.svg}" width="60px">
+            </div>
             <div style="margin: 0 auto" id="u2_text" class="text">
                 <p><h2><strong>量营家后台管理系统</strong></h2></p>
             </div>
             <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <!-- Languages dropdown    -->
-                <li>欢迎您XXX</li>
-                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="#"><span class="d-none d-sm-inline-block">用户管理</span></a>
+                <li>欢迎您!&nbsp;<span style="color: #00aeef" th:text="${session.username}"></span> </li>
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><span class="d-none d-sm-inline-block">用户管理</span></a>
                     <ul aria-labelledby="用户管理" class="dropdown-menu">
                         <li><a rel="nofollow" href="#" class="dropdown-item">修改密码</a>
                         <li><a rel="nofollow" href="#" class="dropdown-item">退出登录</a>
                     </ul>
                 </li>
                 <!-- Logout    -->
-
             </ul>
         </div>
     </div>
