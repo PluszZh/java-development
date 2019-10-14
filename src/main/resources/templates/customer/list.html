@@ -90,7 +90,7 @@
     </header>
     <div class="page-content d-flex align-items-stretch">
         <!-- Side Navbar -->
-        <nav th:replace="~{component_fragements :: side_fragement(1)}" class="side-navbar">
+        <nav th:replace="~{component_fragements :: side_fragement(2)}" class="side-navbar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
                 <div class="avatar"><img src="../../../../../../新建文件夹/template%2002/img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
@@ -122,39 +122,64 @@
             </ul>
         </nav>
         <div class="content-inner">
-            <form action="#" method="post" style="margin: 5px 20px">
-                菜单名称:<input type="text" placeholder="请输入菜单名称">
-                <input type="submit" value="搜索">
+            <br>
+            <form class="form-inline" method="post" action="#">
+                <div class="form-group">
+                    <label for="name">id,手机号,用户名:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="name" class="form-control" id="name" >
+                </div>&nbsp;&nbsp;
+                <button type="submit" class="btn btn-info">搜索</button>
+
             </form>
+            <br>
+
+            <table border="1" class="table table-bordered table-hover">
+                <tr class="success">
+                    <th>userID</th>
+                    <th>用户名</th>
+                    <th>性别</th>
+                    <th>注册手机号</th>
+                    <th>出生日期</th>
+                    <th>年龄</th>
+                    <th>是否可用</th>
+                    <th>注册时间</th>
+                    <th>操作</th>
+                </tr>
+
+                <tr>
+                    <td>234</td>
+                    <td>昵称或实名</td>
+                    <td>男</td>
+                    <td>15100020202</td>
+                    <td>1988-10-28</td>
+                    <td>31</td>
+                    <td>是</td>
+                    <td>2018-06-06  14:40:32</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" href="#">查看</a>&nbsp;
+                        <a class="btn btn-danger btn-sm" href="#">拉黑</a>&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>否</td>
+                    <td></td>
+                    <td>
+                        <a class="btn btn-danger btn-sm" href="#">解除黑名单</a>&nbsp;
+                    </td>
+                </tr>
+            </table>
             <div>
-                <table border="1" class="table table-bordered table-hover">
-                    <tr class="success">
-                        <th>序号</th>
-                        <th>菜单名称</th>
-                        <th>上级菜单</th>
-                        <th>排序</th>
-                        <th>菜单描述</th>
-                        <th>创建时间</th>
-                        <th>操作人</th>
-                        <th>操作</th>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>用户管理</td>
-                        <td>系统管理</td>
-                        <td>1</td>
-                        <td>账号增删改查</td>
-                        <td>2019-09-06 12:23:56</td>
-                        <td>admin</td>
-                        <td><a class="btn btn btn-success btn-sm" href="#">查看</a>&nbsp;<a class="btn  btn-danger btn-sm" href="#">编辑</a></td>
-                    </tr>
-
-
-                </table>
+                <table id="mytab" class="table table-hover"></table>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- JavaScript files-->
 
@@ -168,5 +193,12 @@
 
 <!-- Main File-->
 <script th:src="@{/js/front.js}"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>
 </body>
 </html>

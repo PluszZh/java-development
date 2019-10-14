@@ -122,39 +122,36 @@
             </ul>
         </nav>
         <div class="content-inner">
-            <form action="#" method="post" style="margin: 5px 20px">
-                菜单名称:<input type="text" placeholder="请输入菜单名称">
-                <input type="submit" value="搜索">
-            </form>
+            <br>
+            <ul class="nav nav-list"><li class="divider"></li></ul>
+            <input type="button" class="btn btn-success" value="添加职务">
+            <ul class="nav nav-list"><li class="divider"></li></ul>
+            <br>
+            <table border="1" class="table table-bordered table-hover">
+                <tr class="success">
+                    <th>ID</th>
+                    <th>职务名称</th>
+                    <th>描述</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>CEO</td>
+                    <td>boss</td>
+                    <td>2018-06-06  14:40:32</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" href="#">编辑</a>&nbsp;
+                    </td>
+                </tr>
+            </table>
             <div>
-                <table border="1" class="table table-bordered table-hover">
-                    <tr class="success">
-                        <th>序号</th>
-                        <th>菜单名称</th>
-                        <th>上级菜单</th>
-                        <th>排序</th>
-                        <th>菜单描述</th>
-                        <th>创建时间</th>
-                        <th>操作人</th>
-                        <th>操作</th>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>用户管理</td>
-                        <td>系统管理</td>
-                        <td>1</td>
-                        <td>账号增删改查</td>
-                        <td>2019-09-06 12:23:56</td>
-                        <td>admin</td>
-                        <td><a class="btn btn btn-success btn-sm" href="#">查看</a>&nbsp;<a class="btn  btn-danger btn-sm" href="#">编辑</a></td>
-                    </tr>
-
-
-                </table>
+                <table id="mytab" class="table table-hover"></table>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- JavaScript files-->
 
@@ -168,5 +165,12 @@
 
 <!-- Main File-->
 <script th:src="@{/js/front.js}"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>
 </body>
 </html>

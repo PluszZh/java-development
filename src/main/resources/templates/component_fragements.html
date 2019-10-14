@@ -30,27 +30,27 @@
 </nav>
 
 
-<nav th:fragment="side_fragement(n)" class="side-navbar">
+<nav th:fragment="side_fragement(n)" class="side-navbar" style="width: 180px">
     <ul class="list-unstyled">
         <li th:classappend="${n==1} ? 'active'"><a href="#nav1" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>系统中心</a>
             <ul id="nav1" class="collapse list-unstyled ">
-                <li><a href="#">菜单管理</a></li>
-                <li><a href="#">账号管理</a></li>
-                <li><a href="#">组织结构</a></li>
-                <li><a href="#">职务管理</a></li>
-                <li><a href="#">角色管理</a></li>
+                <li><a href="#" th:href="@{/sys/meun}">菜单管理</a></li>
+                <li><a href="#" th:href="@{/sys/account}">账号管理</a></li>
+                <li><a href="#" th:href="@{/sys/organize}">组织结构</a></li>
+                <li><a href="#" th:href="@{/sys/job}">职务管理</a></li>
+                <li><a href="#" th:href="@{/sys/role}">角色管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==2} ? 'active'"><a href="#nav2" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>客户中心</a>
             <ul id="nav2" class="collapse list-unstyled ">
-                <li><a href="#">客户列表</a></li>
-                <li><a href="#">注册邀请关系</a></li>
-                <li><a href="#">合作商管理</a></li>
+                <li><a href="#" th:href="@{/customer/list}">客户列表</a></li>
+                <li><a href="#" th:href="@{/customer/cooperate}">注册邀请关系</a></li>
+                <li><a href="#" th:href="@{/customer/relation}">合作商管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==3} ? 'active'"><a href="#nav3" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>营销中心</a>
             <ul id="nav3" class="collapse list-unstyled ">
-                <li><a href="#">活动管理</a></li>
+                <li><a href="#" th:href="@{/activity}">活动管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==4} ? 'active'"><a href="#nav4" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>订单中心</a>
