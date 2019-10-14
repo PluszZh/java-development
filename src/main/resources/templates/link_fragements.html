@@ -7,22 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" href="../../../../../../新建文件夹/template%2002/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" href="/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" th:href="@{/vendor/font-awesome/css/font-awesome.min.css}" href="../../../../../../新建文件夹/template%2002/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/vendor/font-awesome/css/font-awesome.min.css}" href="./vendor/font-awesome/css/font-awesome.min.css">
     <!-- Fontastic Custom icon font-->
-    <link rel="stylesheet" th:href="@{/css/fontastic.css}" href="../../../../../../新建文件夹/template%2002/css/fontastic.css">
+    <link rel="stylesheet" th:href="@{/css/fontastic.css}" href="/css/fontastic.css">
     <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" th:href="@{/css/prd.css}" href="/css/prd.css">
+
+
     <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Poppins:300,400,700}" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" th:href="@{/css/style.default.css}" href="../../../../../../新建文件夹/template%2002/css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.default.css}" href="/css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" th:href="@{/css/custom.css}" href="../../../../../../新建文件夹/template%2002/css/custom.css">
+    <link rel="stylesheet" th:href="@{/css/custom.css}" href="/css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="../../../../../../新建文件夹/template%2002/img/favicon.ico">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="/img/favicon.ico">
+
 </div>
 
 <body>
@@ -33,9 +34,16 @@
         <script th:src="@{/vendor/bootstrap/js/bootstrap.min.js}" ></script>
         <script th:src="@{/vendor/jquery.cookie/jquery.cookie.js}" > </script>
         <script th:src="@{/vendor/chart.js/Chart.min.js}"></script>
-        <script th:src="@{/js/charts-custom.js}"></script>
+        <!--<script th:src="@{/js/charts-custom.js}"></script>-->
+        <script th:src="@{/layer/layer.js}"></script>
+        <script th:src="@{/js/prd.js}"></script>
         <!-- Main File-->
         <script th:src="@{/js/front.js}"></script>
+
+        <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     </div>
 
 

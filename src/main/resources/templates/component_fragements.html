@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <nav th:fragment="nav_fragements" class="navbar" style="background-color: rgb(0, 191, 191)">
-    <!-- Search Box-->
     <div class="container-fluid" >
         <div class="navbar-holder d-flex align-items-center justify-content-between" >
             <div>
@@ -19,18 +18,17 @@
                         <li><a rel="nofollow" href="#" class="dropdown-item">退出登录</a>
                     </ul>
                 </li>
-                <!-- Logout    -->
             </ul>
         </div>
     </div>
 </nav>
 
 
-<nav th:fragment="side_fragement(n)" class="side-navbar">
+<nav th:fragment="side_fragement(n)" class="side-navbar col-lg-3 col-md-3">
     <ul class="list-unstyled">
         <li th:classappend="${n==1} ? 'active'"><a href="#nav1" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>系统中心</a>
             <ul id="nav1" class="collapse list-unstyled ">
-                <li><a href="#">菜单管理</a></li>
+                <li><a href="/battalion/menu" th:href="@{/battalion/menu}">菜单管理</a></li>
                 <li><a href="#">账号管理</a></li>
                 <li><a href="#">组织结构</a></li>
                 <li><a href="#">职务管理</a></li>

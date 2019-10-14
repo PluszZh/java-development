@@ -2,10 +2,7 @@ package com.develop.prd.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
@@ -20,8 +17,12 @@ public class Menu {
     @Column(name = "menu_name")
     private String menuName;
 
-    @Column(name = "menu_parent")
-    private Integer menuParent;
+    /*@Column(name = "menu_parent")
+    private Integer menuParent;*/
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "menu_parent")
+    private MenuCenter menuCenter;
 
     @Column(name = "menuOrder")
     private Integer menuOrder;
