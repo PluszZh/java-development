@@ -1,4 +1,4 @@
-package com.develop.prd.controller;
+package com.develop.prd.controller.sys;
 
 import com.develop.prd.core.Result;
 import com.develop.prd.core.ResultGenerator;
@@ -21,14 +21,14 @@ public class MenuController {
     @Autowired
     private MenuService menuService;
 
-    private final String root = "battalion";
+    private final String root = "sys";
 
     @GetMapping("/battalion/menu")
     public String menu(Model model,@RequestParam(value = "menuName",required = false) String menuName) {
         List<Menu> menuList = menuService.list(menuName);
         model.addAttribute("menuList",menuList);
         model.addAttribute("menuName",menuName);
-        return "menu";
+        return root + "/menu";
     }
     @GetMapping("/battalion/findMenu")
     @ResponseBody
