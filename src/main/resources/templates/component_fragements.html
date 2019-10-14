@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<nav th:fragment="nav_fragements" class="navbar">
-    <!-- Search Box-->
-    <div class="search-box">
-        <button class="dismiss"><i class="icon-close"></i></button>
-        <form id="searchForm" action="#" role="search">
-            <input type="search" placeholder="What are you looking for..." class="form-control">
-        </form>
-    </div>
-    <div class="container-fluid">
-        <div class="navbar-holder d-flex align-items-center justify-content-between">
+<nav th:fragment="nav_fragements" class="navbar" style="background-color: rgb(0, 191, 191)">
+    <div class="container-fluid" >
+        <div class="navbar-holder d-flex align-items-center justify-content-between" >
+            <div>
+                <img src="/images/u5.svg" alt="logo" th:src="@{/images/u5.svg}" width="60px">
+            </div>
             <div style="margin: 0 auto" id="u2_text" class="text">
                 <p><h2><strong>量营家后台管理系统</strong></h2></p>
             </div>
             <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <!-- Languages dropdown    -->
-                <li>欢迎您XXX</li>
-                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="#"><span class="d-none d-sm-inline-block">用户管理</span></a>
+                <li>欢迎您!&nbsp;<span style="color: #fbde4a" th:text="${session.username}"></span> </li>
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><span class="d-none d-sm-inline-block">用户管理</span></a>
                     <ul aria-labelledby="用户管理" class="dropdown-menu">
                         <li><a rel="nofollow" href="#" class="dropdown-item">修改密码</a>
                         <li><a rel="nofollow" href="#" class="dropdown-item">退出登录</a>
                     </ul>
                 </li>
-                <!-- Logout    -->
-
             </ul>
         </div>
     </div>
 </nav>
 
 
-<nav th:fragment="side_fragement(n)" class="side-navbar" style="width: 180px">
+<nav th:fragment="side_fragement(n)" class="side-navbar col-lg-3 col-md-3">
     <ul class="list-unstyled">
         <li th:classappend="${n==1} ? 'active'"><a href="#nav1" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>系统中心</a>
             <ul id="nav1" class="collapse list-unstyled ">
-                <li><a href="#" th:href="@{/sys/meun}">菜单管理</a></li>
-                <li><a href="#" th:href="@{/sys/account}">账号管理</a></li>
-                <li><a href="#" th:href="@{/sys/organize}">组织结构</a></li>
-                <li><a href="#" th:href="@{/sys/job}">职务管理</a></li>
-                <li><a href="#" th:href="@{/sys/role}">角色管理</a></li>
+                <li><a href="/battalion/menu" th:href="@{/battalion/menu}">菜单管理</a></li>
+                <li><a href="#">账号管理</a></li>
+                <li><a href="#">组织结构</a></li>
+                <li><a href="#">职务管理</a></li>
+                <li><a href="#">角色管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==2} ? 'active'"><a href="#nav2" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>客户中心</a>
             <ul id="nav2" class="collapse list-unstyled ">
-                <li><a href="#" th:href="@{/customer/list}">客户列表</a></li>
-                <li><a href="#" th:href="@{/customer/cooperate}">注册邀请关系</a></li>
-                <li><a href="#" th:href="@{/customer/relation}">合作商管理</a></li>
+                <li><a href="#">客户列表</a></li>
+                <li><a href="#">注册邀请关系</a></li>
+                <li><a href="#">合作商管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==3} ? 'active'"><a href="#nav3" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>营销中心</a>
             <ul id="nav3" class="collapse list-unstyled ">
-                <li><a href="#" th:href="@{/activity}">活动管理</a></li>
+                <li><a href="#">活动管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==4} ? 'active'"><a href="#nav4" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>订单中心</a>

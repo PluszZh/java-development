@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="~{link_fragements :: links}"></div>
+    <title>用户管理</title>
+
+</head>
+<body>
+<div class="page">
+    <!-- Main Navbar-->
+    <header class="header">
+        <nav th:replace="~{component_fragements :: nav_fragements}"></nav>
+    </header>
+    <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar -->
+        <nav th:replace="~{component_fragements :: side_fragement(1)}" class="side-navbar"></nav>
+        <div class="col-lg-9 col-md-9">
+            <div class="text">
+                <div>
+                    <form action="/battalion/account">
+                        <div class="form-group row" style="margin-top: 10px">
+                            <span for="inputMenuName" class="menu-span">用户名</span>
+                            <input th:value="${username}" type="text" name="menuName"
+                                   class="form-control col-md-3 menu-input" autocomplete="off" id="inputMenuName"
+                                   placeholder="菜单名称">
+                            <span for="inputMenuName" class="menu-span">真实姓名</span>
+                            <input th:value="${username}" type="text" name="menuName"
+                                   class="form-control col-md-3 menu-input" autocomplete="off" id="inputMenuName"
+                                   placeholder="菜单名称">
+                            <span for="inputMenuName" class="menu-span">注册手机号</span>
+                            <input th:value="${username}" type="text" name="menuName"
+                                   class="form-control col-md-3 menu-input" autocomplete="off" id="inputMenuName"
+                                   placeholder="菜单名称">
+                            <span for="inputMenuName" class="menu-span">所属部门</span>
+                            <input th:value="${username}" type="text" name="menuName"
+                                   class="form-control col-md-3 menu-input" autocomplete="off" id="inputMenuName"
+                                   placeholder="菜单名称">
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </div>
+                        <div>
+                            <table class="table table-condensed">
+                                <tr>
+                                    <th>序号</th>
+                                    <th>菜单名称</th>
+                                    <th>上级菜单</th>
+                                    <th>排序</th>
+                                    <th>菜单描述</th>
+                                    <th>创建时间</th>
+                                    <th>操作人</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr th:each="menu : ${menuList}">
+                                    <td>&nbsp;<span th:text="${menuStat.count}"></span></td>
+                                    <td th:text="${menu.menuName}">用户管理</td>
+                                    <td th:text="${menu.menuCenter.centerName}">系统管理</td>
+                                    <td th:text="${menu.menuOrder}">&nbsp;1</td>
+                                    <td th:text="${menu.menuDescription}">账号增删改查</td>
+                                    <td th:text="${#dates.format(menu.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-09-06
+                                        12:23:56
+                                    </td>
+                                    <td th:text="${menu.menuCreator}">admin</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-sm menu-btn"
+                                                data-toggle="modal" data-target="#menuModal"
+                                                th:onclick="doMenu([[${menu.menuId}]],[['select']])">查看
+                                        </button>
+                                        <button class="btn btn-primary btn-sm menu-btn" type="button"
+                                                data-toggle="modal" data-target="#menuModal-edit"
+                                                th:onclick="doMenu([[${menu.menuId}]],[['edit']])">编辑
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--查看框-->
+            <div class="modal fade" id="menuModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content col-md-9">
+                        <div class="modal-header">
+                            <h4 class="modal-title">查看</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="menuName" class="menu-span table-label">名称&nbsp;</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly="readonly" class="table-input" id="menuName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuParent" class="menu-span table-label">上级部门</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly="readonly" class="table-input" id="menuParent">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuDescription" class="menu-span table-label">描述</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly="readonly" class="table-input" id="menuDescription">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuOrder" class="menu-span table-label">排序</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly="readonly" class="table-input" id="menuOrder">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--编辑框-->
+            <div class="modal fade" id="menuModal-edit" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content col-md-9">
+                        <div class="modal-header">
+                            <h4 class="modal-title">编辑</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" hidden="hidden" id="menuId-edit">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="menuName" class="menu-span table-label">名称&nbsp;</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="table-input" id="menuName-edit">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuOrder" class="menu-span table-label">排序</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="table-input" id="menuOrder-edit">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuParent" class="menu-span table-label">上级菜单</label>
+                                    </td>
+                                    <td>
+                                        <select class="table-input" id="selectMenu"></select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="menuDescription" class="menu-span table-label">描述</label>
+                                    </td>
+                                    <td>
+                                        <textarea type="text" id="menuDescription-edit"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-success" onclick="save()">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="link_fragements :: jsScript"></div>
+</body>
+</html>
