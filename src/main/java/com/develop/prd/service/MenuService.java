@@ -3,8 +3,8 @@ package com.develop.prd.service;
 import com.develop.prd.handles.ServiceException;
 import com.develop.prd.model.Menu;
 import com.develop.prd.model.MenuCenter;
-import com.develop.prd.responsity.MenuCenterResponsity;
-import com.develop.prd.responsity.MenuResposity;
+import com.develop.prd.repository.MenuCenterRepository;
+import com.develop.prd.repository.MenuRepository;
 import com.develop.prd.vo.MenuVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,17 +17,17 @@ import java.util.Optional;
 public class MenuService {
 
     @Autowired
-    private MenuResposity menuResposity;
+    private MenuRepository menuRepository;
 
     @Autowired
-    private MenuCenterResponsity menuCenterResponsity;
+    private MenuCenterRepository menuCenterRepository;
 
     public List<Menu> list(String menuName) {
         List<Menu> menuList;
         if(StringUtils.isBlank(menuName)) {
-            menuList = menuResposity.findAll();
+            menuList = menuRepository.findAll();
         }else {
-            menuList = menuResposity.findByMenuNameLike("%" + menuName + "%");
+            menuList = menuRepository.findByMenuNameLike("%" + menuName + "%");
         }
 
 
@@ -35,7 +35,7 @@ public class MenuService {
     }
 
     public Menu findById(String id) {
-        Optional<Menu> menu = menuResposity.findById(id);
+        Optional<Menu> menu = menuRepository.findById(id);
         if(menu.isPresent()) {
             return menu.get();
         }else {
@@ -46,7 +46,7 @@ public class MenuService {
     public MenuVo editMenu(String id) {
         MenuVo menuVo = new MenuVo();
         Menu menu = findById(id);
-        List<MenuCenter> centers = menuCenterResponsity.findAll();
+        List<MenuCenter> centers = menuCenterRepository.findAll();
         menuVo.setMenu(menu);
         menuVo.setMenuCenter(centers);
 
@@ -54,6 +54,6 @@ public class MenuService {
     }
 
     public void save(Menu menu) {
-        menuResposity.save(menu);
+        menuRepository.save(menu);
     }
 }

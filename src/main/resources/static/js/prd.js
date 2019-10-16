@@ -1,22 +1,22 @@
-function doMenu(id,action) {
-    if(action === "select") {
+function doMenu(id, action) {
+    if (action === "select") {
         select(id);
-    }else if(action === "edit") {
+    } else if (action === "edit") {
         edit(id);
     }
 }
 
 function select(id) {
     $.ajax({
-        type:"get",
-        url:"/battalion/findMenu",
+        type: "get",
+        url: "/battalion/findMenu",
         dataType: 'json',
         async: false,
         data: {
-            id:id
+            id: id
         },
         success: function (result) {
-            if(result.code === 200) {
+            if (result.code === 200) {
                 data = result.data;
                 $("#menuName").val(data.menuName);
                 $("#menuParent").val(data.menuCenter.centerName);
@@ -29,15 +29,15 @@ function select(id) {
 
 function edit(id) {
     $.ajax({
-        type:"get",
-        url:"/battalion/editMenu",
+        type: "get",
+        url: "/battalion/editMenu",
         dataType: 'json',
         async: false,
         data: {
-            id:id
+            id: id
         },
         success: function (result) {
-            if(result.code === 200) {
+            if (result.code === 200) {
                 data = result.data;
                 $("#menuId-edit").val(data.menu.menuId);
                 $("#menuName-edit").val(data.menu.menuName);
@@ -46,14 +46,14 @@ function edit(id) {
                 $("#selectMenu").empty();
                 $("#selectMenu").val()
                 for (var i in data.menuCenter) {
-                    if(data.menuCenter[i].centerId === data.menu.menuOrder) {
+                    if (data.menuCenter[i].centerId === data.menu.menuOrder) {
                         $("#selectMenu").append(
-                           /* $("#selectMenu").val(data.menuCenter[i].centerName)*/
-                             '<option value =' + data.menuCenter[i].centerId + '>'+ data.menuCenter[i].centerName + '</option>'
+                            /* $("#selectMenu").val(data.menuCenter[i].centerName)*/
+                            '<option value =' + data.menuCenter[i].centerId + '>' + data.menuCenter[i].centerName + '</option>'
                         )
-                    }else {
+                    } else {
                         $("#selectMenu").append(
-                            '<option value =' + data.menuCenter[i].centerId + '>'+ data.menuCenter[i].centerName + '</option>'
+                            '<option value =' + data.menuCenter[i].centerId + '>' + data.menuCenter[i].centerName + '</option>'
                         )
                     }
 
@@ -66,23 +66,84 @@ function edit(id) {
 
 function save() {
     $.ajax({
-        type:"post",
-        url:"/battalion/saveMenu",
+        type: "post",
+        url: "/battalion/saveMenu",
         dataType: 'json',
         async: true,
         data: {
             menuId: $("#menuId-edit").val(),
-            menuName:$("#menuName-edit").val(),
-            menuOrder:$("#menuOrder-edit").val(),
-            menuCenter:$('#selectMenu option:selected').val(),
-            menuDescription:$("#menuDescription-edit").val()
+            menuName: $("#menuName-edit").val(),
+            menuOrder: $("#menuOrder-edit").val(),
+            menuCenter: $('#selectMenu option:selected').val(),
+            menuDescription: $("#menuDescription-edit").val()
         },
         success: function (result) {
-            if(result.code === 200) {
+            if (result.code === 200) {
                 layer.msg('保存成功');
                 window.location.reload();
             }
         }
     })
+}
+
+function editRole(roleId) {
+    $.ajax({
+        type: "post",
+        url: "/battalion/editRole",
+        dataType: 'json',
+        async: true,
+        data: {
+            id: roleId
+        },
+        success: function (result) {
+            if (result.code === 200) {
+                data = result.data;
+                $("#roleName-edit").val(data.roleName);
+                $("#roleDescription-edit").val(data.roleDescription);
+                $("#roleId").val(data.roleId);
+            }
+        }
+    })
 
 }
+
+function saveRole() {
+    $.ajax({
+        type: "post",
+        url: "/battalion/saveRole",
+        dataType: 'json',
+        async: true,
+        data: {
+            roleId: $("#roleId").val(),
+            roleName: $("#roleName-edit").val(),
+            roleDescription: $("#roleDescription-edit").val()
+        },
+        success: function (result) {
+            if (result.code === 200) {
+                layer.msg('保存成功');
+                window.location.reload();
+            }
+        }
+    })
+}
+
+function editJob(jobId) {
+    $.ajax({
+        type: "post",
+        url: "/battalion/editJob",
+        dataType: 'json',
+        async: true,
+        data: {
+            id: jobId
+        },
+        success: function (result) {
+            if (result.code === 200) {
+                data = result.data;
+                $("#jobId-edit").val(data.jobId);
+                $("#jobName-edit").val(data.jobName);
+                $("#jobDescription-edit").val(data.jobDescription);
+            }
+        }
+    })
+}
+

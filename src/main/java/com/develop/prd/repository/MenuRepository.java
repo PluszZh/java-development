@@ -1,11 +1,11 @@
-package com.develop.prd.responsity;
+package com.develop.prd.repository;
 
 import com.develop.prd.model.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface MenuResposity extends JpaRepository<Menu,String> {
+public interface MenuRepository extends JpaRepository<Menu,String> {
 
     List<Menu> findByMenuNameLike(String menuName);
 }

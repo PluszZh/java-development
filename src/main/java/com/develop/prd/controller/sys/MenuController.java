@@ -24,12 +24,13 @@ public class MenuController {
     private final String root = "sys";
 
     @GetMapping("/battalion/menu")
-    public String menu(Model model,@RequestParam(value = "menuName",required = false) String menuName) {
+    public String menu(Model model, @RequestParam(value = "menuName", required = false) String menuName) {
         List<Menu> menuList = menuService.list(menuName);
-        model.addAttribute("menuList",menuList);
-        model.addAttribute("menuName",menuName);
+        model.addAttribute("menuList", menuList);
+        model.addAttribute("menuName", menuName);
         return root + "/menu";
     }
+
     @GetMapping("/battalion/findMenu")
     @ResponseBody
     public Result findMenu(@RequestParam(value = "id") String id) {
@@ -41,7 +42,6 @@ public class MenuController {
     @ResponseBody
     public Result editMenu(@RequestParam(value = "id") String id) {
         MenuVo menuVo = menuService.editMenu(id);
-
         return ResultGenerator.genSuccessResult(menuVo);
     }
 

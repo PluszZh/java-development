@@ -24,15 +24,15 @@
 </nav>
 
 
-<nav th:fragment="side_fragement(n)" class="side-navbar col-lg-3 col-md-3">
+<nav th:fragment="side_fragement(n)" class="side-navbar col-lg-5 col-md-5" style="max-width: 230px !important;">
     <ul class="list-unstyled">
         <li th:classappend="${n==1} ? 'active'"><a href="#nav1" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>系统中心</a>
             <ul id="nav1" class="collapse list-unstyled ">
                 <li><a href="/battalion/menu" th:href="@{/battalion/menu}">菜单管理</a></li>
                 <li><a href="/battalion/account" th:href="@{/battalion/account}">账号管理</a></li>
-                <li><a href="#">组织结构</a></li>
-                <li><a href="#">职务管理</a></li>
-                <li><a href="#">角色管理</a></li>
+                <li><a href="/battalion/organize" th:href="@{/battalion/organize}">组织结构</a></li>
+                <li><a href="/battalion/job">职务管理</a></li>
+                <li><a href="/battalion/role" th:href="@{/battalion/role}">角色管理</a></li>
             </ul>
         </li>
         <li th:classappend="${n==2} ? 'active'"><a href="#nav2" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>客户中心</a>
